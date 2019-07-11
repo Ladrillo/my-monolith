@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'frontend')));
 
 app.get('/api/users', (req, res) => {
-  res.json({ success: true })
+  res.json({ users: [{ name: "Petar"}, { name: "gabe"}] })
 });
 
 app.get('/', (req, res) => {
